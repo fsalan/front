@@ -11,7 +11,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { EyeIcon } from "@heroicons/react/24/outline";
 import NewForm, { parseDataOnSubmit } from "./NewForm";
 import { toast } from "sonner";
-import PageName from "../ui/commons/PageName";
+import PageName from "../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import { formatTimestampToDateString } from "@/utils/facades/strFacade";
 import SkeletonTable from "../ui/commons/SkeltonTable";
 import { handleRequestError } from "@/utils/facades/handleRequestError";

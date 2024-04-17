@@ -14,7 +14,7 @@ import {
   GET_USER_NOTIFICATIONS,
   VIEWED_NOTIFICATIONS,
 } from "@/utils/graphql/graphqlGlobalQueries";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 
 const AdminNotificationsPage = () => {
   const { data: notifications } = useQuery(GET_USER_NOTIFICATIONS);

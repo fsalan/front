@@ -1,5 +1,5 @@
 import NewCRUD, { FieldTypeType } from "@/components/core/NewCRUD";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import { GET_ALL_INVOICES } from "./invoiceGraphql";
 import useSuperAdmin from "@/utils/hooks/useSuperAdmin";
 import ForbiddenPage from "@/components/layouts/errors/ForbiddenPage";

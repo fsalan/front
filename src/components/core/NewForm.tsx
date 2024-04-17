@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Switch } from "@headlessui/react";
-
+import { MultiSelect, MultiSelectItem } from "@tremor/react";
 import { toast } from "sonner";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -294,26 +294,6 @@ const NewForm = ({
                   {field.type === "select" && (
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm">
-                        {/* <select
-                          {...register(field.name, {
-                            required: field.required,
-                          })}
-                          name={field.name}
-                          id={field.name}
-                          className="input-text"
-                        >
-                          {field.options?.map(
-                            (option: FieldSelectOption, index: number) => (
-                              <option
-                                value={option.optionValue}
-                                key={`option-${index}`}
-                              >
-                                {option.optionName}
-                              </option>
-                            )
-                          )}
-                        </select> */}
-
                         <SearchSelect
                           onValueChange={(value) => setValue(field.name, value)}
                           value={watch(field.name)}
@@ -330,6 +310,28 @@ const NewForm = ({
                             )
                           )}
                         </SearchSelect>
+                      </div>
+                    </div>
+                  )}
+                  {field.type === "multiselect" && (
+                    <div className="mt-2">
+                      <div className="flex rounded-md shadow-sm">
+                        <MultiSelect
+                          onValueChange={(value) => setValue(field.name, value)}
+                          value={watch(field.name)}
+                          id={field.name}
+                        >
+                          {field.options?.map(
+                            (option: FieldSelectOption, index: number) => (
+                              <MultiSelectItem
+                                value={option.optionValue}
+                                key={`option-${index}`}
+                              >
+                                {option.optionName}
+                              </MultiSelectItem>
+                            )
+                          )}
+                        </MultiSelect>
                       </div>
                     </div>
                   )}

@@ -13,13 +13,13 @@ import {
 } from "./supportGraphql";
 import { SupportTicketContentInput } from "./supportTypes";
 import PageLoader from "@/components/ui/loaders/PageLoader";
-import PageName from "@/components/ui/commons/PageName";
 import { formatTimestampToDateString } from "@/utils/facades/strFacade";
 import UserCard from "@/components/ui/commons/UserCard";
 import TextArea from "@/components/core/TextArea";
 import useSuperAdmin from "@/utils/hooks/useSuperAdmin";
 import { GET_CURRENT_USER } from "@/utils/graphql/graphqlGlobalQueries";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import PageName from '@/components/ui/commons/PageName';
 
 const AdminSupportViewTicketPage = () => {
   const { ticketId } = useParams();

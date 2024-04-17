@@ -28,6 +28,6 @@
       "components/*": ["./src/components/*"],
     }
   },
-  "include": ["src"],
+  "include": ["src", "../../boilerplate-next-frontend/src/app/components/ui/commons/PageName.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

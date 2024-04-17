@@ -8,12 +8,12 @@ import { useQuery } from "@apollo/client";
 import { UserType } from "@/utils/types/globalsTypes";
 import { GET_ALL_USERS } from "@/utils/graphql/graphqlGlobalQueries";
 import SkeletonTable from "@/components/ui/loaders/SkeltonTable";
-import PageName from "@/components/ui/commons/PageName";
 import Search from "@/components/core/Search";
 import { formatTimestampToDateString } from "@/utils/facades/strFacade";
 import { handleRequestError } from "@/utils/facades/handleRequestError";
 import useSuperAdmin from "@/utils/hooks/useSuperAdmin";
 import ForbiddenPage from "@/components/layouts/errors/ForbiddenPage";
+import PageName from '@/components/ui/commons/PageName';
 
 const SuperAdminUsersModulePage = () => {
   const { hasModulePermission } = useSuperAdmin(

@@ -24,7 +24,7 @@ import {
   GET_USER_SUPPORT_TICKETS,
 } from "./supportGraphql";
 import { SupportTicketContentInput } from "./supportTypes";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import PageLoader from "@/components/ui/loaders/PageLoader";
 import TextArea from "@/components/core/TextArea";
 import useSuperAdmin from "@/utils/hooks/useSuperAdmin";

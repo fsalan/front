@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import { useQuery } from "@apollo/client";
 import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";

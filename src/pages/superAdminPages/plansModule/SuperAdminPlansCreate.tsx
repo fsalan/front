@@ -15,7 +15,7 @@ import {
   GET_PLANS,
 } from "./plansGraphql";
 import NewForm, { parseDataOnSubmit } from "@/components/core/NewForm";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import PageLoader from "@/components/ui/loaders/PageLoader";
 import { Select, SelectItem, TextInput } from "@tremor/react";
 import { handleRequestError } from "@/utils/facades/handleRequestError";

@@ -11,7 +11,7 @@ import {
 
 import { GET_ALL_SUBSCRIPTIONS } from "./plansGraphql";
 import SkeltonTable from "@/components/ui/loaders/SkeltonTable";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import { MembershipType } from "./plansTypes";
 import { formatTimestampToDateString } from "@/utils/facades/strFacade";
 import NotFound from "@/components/ui/commons/NotFound";

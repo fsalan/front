@@ -20,7 +20,7 @@ import {
   FaceSmileIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
-import PageName from "@/components/ui/commons/PageName";
+import PageName from "../../../../../../boilerplate-next-frontend/src/app/components/ui/commons/PageName";
 import SuperAdminACLSettingsPage from "./SuperAdminACLSettingsPage";
 
 const SuperAdminSettingPage = () => {
